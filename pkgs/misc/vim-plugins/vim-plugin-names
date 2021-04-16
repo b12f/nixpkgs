@@ -48,6 +48,7 @@ cespare/vim-toml
 Chiel92/vim-autoformat
 chikatoike/concealedyank.vim
 chikatoike/sourcemap.vim
+chkno/vim-haskell-module-name
 chr4/nginx.vim
 chrisbra/CheckAttach
 chrisbra/csv.vim
@@ -355,6 +356,7 @@ megaannum/forms
 megaannum/self
 mengelbrecht/lightline-bufferline
 metakirby5/codi.vim
+metalelf0/jellybeans-nvim@main
 mfukar/robotframework-vim
 mfussenegger/nvim-dap
 mfussenegger/nvim-jdtls
@@ -379,6 +381,7 @@ motus/pig.vim
 mpickering/hlint-refactor-vim
 ms-jpq/chadtree@chad
 mtikekar/vim-bsv
+mzlogin/vim-markdown-toc
 nanotech/jellybeans.vim
 natebosch/vim-lsc
 nathanaelkane/vim-indent-guides
@@ -424,7 +427,7 @@ noc7c9/vim-iced-coffee-script
 norcalli/nvim-colorizer.lua
 norcalli/nvim-terminal.lua
 norcalli/snippets.nvim
-npxbr/glow.nvim
+npxbr/glow.nvim@main
 ntpeters/vim-better-whitespace
 numirias/semshi
 nvie/vim-flake8
@@ -437,6 +440,8 @@ nvim-lua/popup.nvim
 nvim-telescope/telescope-frecency.nvim
 nvim-telescope/telescope-fzf-writer.nvim
 nvim-telescope/telescope-fzy-native.nvim
+nvim-telescope/telescope-symbols.nvim
+nvim-telescope/telescope-z.nvim@main
 nvim-telescope/telescope.nvim
 nvim-treesitter/completion-treesitter
 nvim-treesitter/nvim-treesitter
@@ -464,6 +469,7 @@ pearofducks/ansible-vim
 peitalin/vim-jsx-typescript
 peterbjorgensen/sved
 peterhoeg/vim-qml
+petRUShka/vim-opencl
 phaazon/hop.nvim
 phanviet/vim-monokai-pro
 plasticboy/vim-markdown
@@ -505,6 +511,7 @@ rhysd/vim-grammarous
 rhysd/vim-operator-surround
 RishabhRD/nvim-lsputils
 RishabhRD/popfix
+rktjmp/lush.nvim@main
 rmagatti/auto-session@main
 rodjek/vim-puppet
 romainl/vim-cool
@@ -554,6 +561,7 @@ shumphrey/fugitive-gitlab.vim
 sickill/vim-pasta
 SidOfc/mkdx
 simnalamburt/vim-mundo
+simrat39/rust-tools.nvim
 SirVer/ultisnips
 sjl/gundo.vim
 sjl/splice.vim
@@ -606,6 +614,7 @@ tommcdo/vim-lion
 tommcdo/vim-ninja-feet
 tomtom/tcomment_vim
 tomtom/tlib_vim
+tools-life/taskwiki
 tpope/vim-abolish
 tpope/vim-capslock
 tpope/vim-commentary
@@ -712,7 +721,6 @@ w0ng/vim-hybrid
 wakatime/vim-wakatime
 wannesm/wmgraphviz.vim
 wbthomason/packer.nvim
-weirongxu/coc-explorer
 wellle/targets.vim
 wellle/tmux-complete.vim
 wfxr/minimap.vim

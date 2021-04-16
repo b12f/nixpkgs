@@ -2,7 +2,6 @@
 , fetchFromGitHub
 , autoreconfHook
 , pkg-config
-, makeWrapper
 , bison
 , ncurses
 , libevent
@@ -41,13 +40,14 @@ stdenv.mkDerivation rec {
   buildInputs = [
     ncurses
     libevent
-    makeWrapper
   ];
 
   configureFlags = [
     "--sysconfdir=/etc"
     "--localstatedir=/var"
   ];
+
+  enableParallelBuilding = true;
 
   postInstall = ''
     mkdir -p $out/share/bash-completion/completions
