@@ -30,7 +30,7 @@ buildPythonPackage rec {
   };
 
   preConfigure = with lib.versions; ''
-    ${python.interpreter} configure.py --cl-enable-gl --python-exe=python3 --cl-pretend-version=1.2
+    ${python.interpreter} configure.py --python-exe=python3 --cl-pretend-version=1.2
   '';
 
   # py.test is not needed during runtime, so remove it from `install_requires`
