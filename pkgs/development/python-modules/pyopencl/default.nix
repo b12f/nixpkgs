@@ -6,6 +6,7 @@
 , numpy
 , cffi
 , pytools
+, python
 , decorator
 , appdirs
 , six
@@ -27,6 +28,10 @@ buildPythonPackage rec {
     inherit pname version;
     sha256 = "abc689307cf34d3dcc94d43815f64e2265469b50ecce6c903a3180589666fb36";
   };
+
+  preConfigure = with lib.versions; ''
+    ${python.interpreter} configure.py --cl-enable-gl --python-exe=python3 --cl-pretend-version=1.2
+  '';
 
   # py.test is not needed during runtime, so remove it from `install_requires`
   postPatch = ''
