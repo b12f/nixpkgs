@@ -284,7 +284,7 @@ in
     {
       assertions = [
         {
-          assertion = cfg.database.createLocally -> cfg.database.type == "mysql";
+          assertion = cfg.database.createLocally -> cfg.database.type == "mysql" || cfg.database.type == "pgsql";
           message = "services.limesurvey.createLocally is currently only supported for database type 'mysql'";
         }
         {
@@ -450,6 +450,19 @@ in
             ensurePermissions = {
               "${cfg.database.name}.*" = "SELECT, CREATE, INSERT, UPDATE, DELETE, ALTER, DROP, INDEX";
             };
+          }
+        ];
+      };
+    })
+
+    (mkIf pgsqlLocal {
+      services.postgresql = {
+        enable = true;
+        ensureDatabases = [ cfg.database.name ];
+        ensureUsers = [
+          {
+            name = cfg.database.user;
+            ensureDBOwnership = true;
           }
         ];
       };
