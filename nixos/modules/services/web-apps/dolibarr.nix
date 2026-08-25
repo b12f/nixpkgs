@@ -88,7 +88,7 @@ let
     else
       null;
 
-  socketOwner = if cfg.h2o != null then config.services.h2o.user else cfg.user;
+  socketOwner = if cfg.h2o != null then config.services.h2o.user else (if cfg.nginx != null then config.services.nginx.user else cfg.user);
 
   # see https://github.com/Dolibarr/dolibarr/blob/develop/htdocs/install/install.forced.sample.php for all possible values
   install = {
