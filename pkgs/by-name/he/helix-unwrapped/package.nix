@@ -28,11 +28,11 @@ rustPlatform.buildRustPackage (
     src = fetchFromGitHub {
       owner = "helix-editor";
       repo = "helix";
-      tag = finalAttrs.version;
-      hash = "sha256-RFSzGAcB0mMg/02ykYfTWXzQjLFu2CJ4BkS5HZ/6pBo=";
+      rev = "079a789e8cb08ead67f19e1971a1b7438b37354b";
+      hash = "sha256-IYDL6Vnf13Sa+wbeXZTAxvdLA4h8Ew5ha0spcJy/Yk0=";
     };
 
-    cargoHash = "sha256-Mf0nrgMk1MlZkSyUN6mlM5lmTcrOHn3xBNzmVGtApEU=";
+    cargoHash = "sha256-oo59HhwOS3EeV/YI+NWirEkdzD9pzMot2lgphZeOxfc=";
 
     patches = [
       # Support mdbook 0.5.x: escape HTML tags in command descriptions
